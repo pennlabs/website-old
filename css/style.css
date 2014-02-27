@@ -197,8 +197,11 @@ p, label, input, button, textarea{
   margin-right: auto;
   display: table-cell;
   vertical-align: middle;
+}
+
+.info_block p {
   padding-left: 20px;
-  padding-right:20px;
+  padding-right: 20px;
 }
 
 .info_block h2, .info_block .underline_divider {
@@ -213,6 +216,8 @@ p, label, input, button, textarea{
   color: white;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #map-canvas {
