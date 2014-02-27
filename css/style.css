@@ -241,12 +241,9 @@ form {
   width: 500px;
 }
 
-.nav {
-  text-align: center;
-  margin-left: auto;
-  margin-right:auto;
+.nav li {
+  width: 10em;
 }
-
 #more{
   background-image:url('../img/vivderek.png');
 }
@@ -288,4 +285,13 @@ a.text_link {
 
 h3 {
   font-size: 23px;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }
