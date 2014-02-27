@@ -33,7 +33,7 @@ if(isset($_POST['email'])) {
     return died($error_message);
   }
 
-   if(strlen($error_message) >= 0) {
+   if(strlen($error_message) > 0) {
     died($error_message);
   }
     $email_message = "Form details below.<br/>";
