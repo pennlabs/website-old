@@ -31,15 +31,15 @@ $(document).ready(function(){
             },
             success: function(response) {
               if (response['Response'] == 'Success') {
-                $('#contact_pennlabs').empty();
-                $('#contact_pennlabs').append('<p>Thanks for your feedback - we will get back to you soon!</p>');
+                $('#pennlabs-form').empty();
+                $('#pennlabs-form').append('<p>Thanks for your feedback - we will get back to you soon!</p>');
               } else {
-                $('form').prepend('<p>' + response['Error'] + ' Please try again.</p>');
+                $('#pennlabs-form').prepend('<p>' + response['Error'] + ' Please try again.</p>');
                 
               }
              },
-            error: function() {
-              alert("Error");
+            error: function(response) {
+              alert(response);
             },
       });
   });
