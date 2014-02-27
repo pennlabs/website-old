@@ -127,6 +127,7 @@ a, h3 {
   letter-spacing: 1px;
   color: #2d3038;
 }
+
 p, label, input, button, textarea{
   font-family: 'Lato', sans-serif;
   font-weight: 200;
@@ -230,8 +231,8 @@ p, label, input, button, textarea{
 }
 
 #contact {
-  margin-bottom: 100px;
-  margin-top: 100px;
+  margin-bottom: 120px;
+  margin-top: 120px;
 }
 
 form {
@@ -283,4 +284,8 @@ a.text_link {
   margin-left: 10px;
   opacity: 0.4;
   line-height:60px;
+}
+
+h3 {
+  font-size: 23px;
 }
