@@ -49,8 +49,8 @@ if(isset($_POST['email'])) {
      
      
 $url_send = 'http://sendgrid.com/';
-$user = 'app17871996@heroku.com';
-$pw = 'pjmrvmoc';
+$user = $_ENV['SENDGRID_USER'];
+$pw = $_ENV['SENDGRID_PW'];
 
 $params = array(
   'api_user' => $user,
