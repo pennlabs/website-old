@@ -152,8 +152,12 @@ p, label, input, button, textarea{
 }
 
 .image img{
-  height: 200px;
+  height: 210px;
   border: 1px solid #EDEDED;
+}
+
+#team .image img {
+  height: 220px;
 }
 
 .container {
