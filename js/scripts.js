@@ -1,7 +1,7 @@
 function chk_scroll(e)
 {
   e.stopPropagation();
-    var height = $('#banner').height();
+    var height = $('#banner').height() + 55;
     console.log(height);
     if ($(this).scrollTop() > height) {
       $('.navbar').addClass('navbar-fixed-top');
