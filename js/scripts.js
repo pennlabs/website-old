@@ -15,7 +15,7 @@ function chk_scroll(e)
 $(document).ready(function(){
 
     $(window).bind('scroll',chk_scroll);
-      $('#pennapps-mentor-submit').click(function(evt) {
+      $('#pennlabs-submit').click(function(evt) {
       evt.preventDefault();
       var name = $('#name').val();
       var email = $('#email').val();
