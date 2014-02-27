@@ -197,6 +197,8 @@ p, label, input, button, textarea{
   margin-right: auto;
   display: table-cell;
   vertical-align: middle;
+  padding-left: 20px;
+  padding-right:20px;
 }
 
 .info_block h2, .info_block .underline_divider {
