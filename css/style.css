@@ -301,3 +301,8 @@ h3 {
 form ul, ol{
   list-style-type: none;
 }
+
+#app {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
