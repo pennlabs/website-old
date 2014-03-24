@@ -297,3 +297,7 @@ h3 {
 .navbar .navbar-collapse {
   text-align: center;
 }
+
+form ul, ol{
+  list-style-type: none;
+}
