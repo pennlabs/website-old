@@ -1,0 +1,35 @@
+#container {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.padded {
+  padding: 10px; }
+
+#output {
+  font-family: monospace; }
+
+#addressDisplay {
+  padding-bottom: 10px; }
+
+ul#examples {
+  float: left;
+  list-style: none; }
+  ul#examples li {
+    padding-bottom: 10px; }
+
+pre {
+  border: none;
+  margin: 0; }
+
+.loading {
+  opacity: 0.6; }
+
+.no-list {
+  list-style: none; }
+
+#source {
+  margin-bottom: 10px; }
+  #source:before {
+    content: "Source: "; }
