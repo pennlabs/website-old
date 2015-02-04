@@ -316,8 +316,10 @@ form ul, ol{
 #contact h3#touch {
   padding-bottom: 10px;
   width: 500px;
-  text-align: center;
+  text-align: left;
+  padding-left: 15%;
 }
+
 
 #contact h3#help {
   padding-left: 20px;
