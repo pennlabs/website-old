@@ -332,3 +332,35 @@ form ul, ol{
   margin-top: 120px;
   margin-bottom: 100px;
 }
+
+/* media queries */
+@media screen and (max-width: 1000px) {
+  form {
+    width: auto;
+  }
+  #contact h3#touch {
+    width: 250px;
+  }
+  input {
+    width: 100%;
+  }
+  #contact_pennlabs {
+    width: 150px;
+  }
+  #pennlabs-form {
+    width: 200px;
+  }
+  .item {
+    margin: auto;
+    padding-bottom: 20px;
+    height: auto;
+  }
+  .item img {
+    width: 100%;
+  }
+
+  .help-form {
+    top: 50px;
+    padding-bottom: 40px;
+  }
+}
