@@ -125,14 +125,14 @@ code {
 
 a, h3 {
   font-family: 'Lato', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 1px;
   color: #2d3038;
 }
 
 p, label, input, button, textarea{
   font-family: 'Lato', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.1em;
 }
 
@@ -252,7 +252,7 @@ ul {
 a.text_link {
   color: white;
   text-decoration:underline;
-  font-weight: 200;
+  font-weight: 300;
   font-family: 'Lato', sans-serif;
 }
 
@@ -331,6 +331,23 @@ form ul, ol{
 #app {
   margin-top: 120px;
   margin-bottom: 100px;
+}
+
+/***************
+ * Alumni page *
+ **************/
+
+.work {
+  font-size: 1.3em;
+  margin-bottom: 2px;
+}
+
+.now-at {
+  font-weight: 400;
+}
+
+.labs-time {
+  font-style: italic;
 }
 
 /* media queries */
