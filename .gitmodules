@@ -1,3 +1,6 @@
 [submodule "mobile"]
 	path = mobile
 	url = https://github.com/pennlabs/penn-mobile-splash.git
+[submodule "console"]
+	path = console
+	url = https://github.com/pennlabs/PCR-console.git
