@@ -58,39 +58,5 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function(){
-
-    $(window).bind('scroll',chk_scroll);
-      $('#pennlabs-submit').click(function(evt) {
-      evt.preventDefault();
-      var name = $('#name').val();
-      var email = $('#email').val();
-      var comments = $('#message').val();
-      if ((name !== "") && (email!=="") && (comments!=="")) {
-      $.ajax({
-        url: "https://docs.google.com/forms/d/1KGE-QeKVFKiBWFiuKgPBgwhj7SBL6ALX0n4qDZLA4b4/formResponse",
-            type: "POST",
-            dataType: "xml",
-            data: {
-              'entry.1220311493' : name,
-              'entry.249567821' : email,
-	      'entry.486413411' : comments,
-	      'draftResponse': [,,"6800256326825222262"],
-	      'pageHistory': 0,
-              'fbzx' : 6800256326825222262
-            },
-            statusCode: {
-              0: function() {
-		$('#pennlabs-form').prepend('<p>Thanks for your feedback - we will get back to you soon!</p>');
-                $('#pennlabs-form input, #pennlabs-form textarea').val("");
-              },
-              200: function(){
-		$('#pennlabs-form').prepend('<p>Thanks for your feedback - we will get back to you soon!</p>');
-                $('#pennlabs-form input, #pennlabs-form textarea').val("");
-              }
-           }
-      });
-      } else {
-	$('#pennlabs-form').prepend('<p>Form not complete - please try again.</p>');
-      }
-  });
+  $(window).bind('scroll',chk_scroll);
 });

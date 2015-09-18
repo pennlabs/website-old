@@ -127,18 +127,22 @@ layout: default
   <div class="underline_divider"></div>
   <div class="contact-form pull-left col-md-6 col-md-offset-2">
     <h3 id="touch">Get in touch</h3>
-    <form role="form" id="pennlabs-form">
-      <div class="form-group" id="contact_pennlabs">
-        <input type="name" class="form-control" id="name" placeholder="Enter name">
+    <form role="form" method="POST" action="//formspree.io/contact@pennlabs.org">
+      <div class="form-group">
+        <input type="text" name="name" class="form-control" placeholder="Enter name">
       </div>
 
       <div class="form-group">
-        <input type="email" class="form-control" id="email" placeholder="Enter email">
+        <input type="email" name="email" class="form-control" placeholder="Enter email">
       </div>
       <div class="form-group">
-        <textarea class="form-control" id="message" rows="3" placeholder="Enter Message"></textarea>
+        <input type="text" name="_subject" class="form-control" placeholder="Enter Title">
       </div>
-      <button type="submit" id="pennlabs-submit" class="btn btn-default">Submit</button>
+      <div class="form-group">
+        <textarea class="form-control" rows="3" placeholder="Enter Message"></textarea>
+      </div>
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="submit" class="btn btn-default" value="Submit">
     </form>
   </div> 
   
