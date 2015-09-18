@@ -21,3 +21,7 @@ We love to accept pull requests! Also, file bugs or ask questions in GitHub issu
 ### Deploying
 
 The website is currently hosted on GitHub pages, so deploying a change as is simple as merging a change into the `gh-pages` branch.
+
+## License
+
+[MIT Licensed](LICENSE)
