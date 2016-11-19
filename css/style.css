@@ -83,7 +83,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-size: 8em;
-  /* display: inline;*/
 }
 
 p a {
@@ -365,7 +364,11 @@ form ul, ol{
   object-fit: cover;
 }
 
-@media (max-width: 767px) {
+/***************
+ * Media Queries *
+ **************/
+
+ @media (max-width: 767px) {
   #footer-text {
     display: none;
   }
@@ -380,10 +383,6 @@ form ul, ol{
   }
 
 }
-
-/***************
- * Media Queries *
- **************/
 
 @media screen and (max-width: 1000px) {
   form {
