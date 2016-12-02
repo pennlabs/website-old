@@ -89,11 +89,11 @@ layout: default
       </div>
       <h3>{{ member.firstname }} {{ member.lastname }}</h3>
       <p>
-        {% if member.website contains 'http' %}
+        {% unless member.website == nil %}
           {{ member.bio | replace_first: member.firstname, linkedName | remove: '<p>' | remove: '</p>' }}
         {% else %}
           {{ member.bio | remove: '<p>' | remove: '</p>' }}
-        {% endif %}
+        {% endunless %}
       </p>
     </div>
   {% endfor %}
