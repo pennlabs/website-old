@@ -80,49 +80,24 @@ layout: default
     <h2>Team</h2>
   </div>
   <div class="underline_divider"></div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="img/bios/adam.jpg">
-    </div>
-    <h3>Adam Domingoes</h3>
-    <p><a href="http://www.adamdomingoes.com">Adam</a> is a sophomore studying Finance and Computer Science and is Co-Director of Penn Labs. When he’s not hacking in JavaScript, he can be found playing guitar.</p>
-  </div>
+
+  {% for member in site.data.bios %}
+    {% capture linkedName %}<a href='{{ member.website }}' target='_blank'>{{ member.firstname }}</a>{% endcapture %}
     <div class="item">
-    <div class="image img-responsive">
-      <img src="img/bios/jason.jpg">
+      <div class="image img-responsive">
+        <img src="{{ member.image }}">
+      </div>
+      <h3>{{ member.firstname }} {{ member.lastname }}</h3>
+      <p>
+        {% if member.website contains 'http' %}
+          {{ member.bio | replace_first: member.firstname, linkedName | remove: '<p>' | remove: '</p>' }}
+        {% else %}
+          {{ member.bio | remove: '<p>' | remove: '</p>' }}
+        {% endif %}
+      </p>
     </div>
-    <h3>Jason Tang</h3>
-      <p><a href="https://jasontsh.github.io">Jason</a> is a junior in Computer Science and Economics from Hong Kong and is Co-Director of Penn Labs.  He is proficient in android coding, and when he is not coding he plays piano and composes.</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="img/bios/adel.jpg">
-    </div>
-    <h3>Adel Qalieh</h3>
-    <p>Adel is a senior from Detroit studying computational biology. When he's not hacking in Python, Adel enjoys learning new languages, trying spicy food, and studying organic chemistry.</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="img/bios/joseph.jpg">
-    </div>
-    <h3>Joseph Gao</h3>
-    <p>Joseph is a junior studying computer science. He enjoys working on cool projects and spends his free time either hanging out with his suite mates or on the rift.</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="img/bios/sumit.jpg">
-    </div>
-        <h3>Sumit Shyamsukha</h3>
-    <p>Sumit is a sophomore from India studying Computer Science and Cognitive Science. When he's not trying to learn new things off the Internet, you can find him singing or musing about anything and everything.</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="img/bios/krishna.jpg">
-    </div>
-    <h3>Krishna Bharathala</h3>
-    <p>Krishna is a junior in the Management and Technology program where he is studying Computer Science, Management, and Statistics. He likes going to hackathons, learning magic tricks, and playing chess.</p>
-  </div>
-</div>   
+  {% endfor %}
+
 
 <div class="info_block" id="schedule">
   <h2>Made@Penn</h2>
@@ -151,8 +126,8 @@ layout: default
         <input type="text" name="_gotcha" style="display:none" />
         <input type="submit" class="btn btn-default" value="Submit">
       </form>
-    </div> 
-    
+    </div>
+
     <div class="help-form col-md-4 col-sm-4">
       <h3 id="help">Need help?</h3>
       <ul id="help_list">
