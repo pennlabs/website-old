@@ -9,18 +9,18 @@ layout: default
   </div>
   <div class="underline_divider"></div>
 
-  {% for member in site.data.alum-bios %}
+  {% for alum in site.data.alum-bios %}
     <div class="item">
       <div class="image img-responsive">
-        <img src="{{ member.image }}">
+        <img src="{{ alum.image }}">
       </div>
-      <h3>{{ member.firstname }} {{ member.lastname }}</h3>
-      {% unless member.work == nil %}
-        <p class="work">Now at <span class="now-at">{{ member.work }}</span></p>
+      <h3>{{ alum.firstname }} {{ alum.lastname }}</h3>
+      {% unless alum.work == nil %}
+        <p class="work">Now at <span class="now-at">{{ alum.work }}</span></p>
       {% endunless %}
-      <p class="labs-time">{{ member.startyear }}
-        {% unless member.endyear == nil %}
-          &ndash; {{ member.endyear }}
+      <p class="labs-time">{{ alum.startyear }}
+        {% unless alum.endyear == nil %}
+          &ndash; {{ alum.endyear }}
         {% endunless %}
       </p>
     </div>
