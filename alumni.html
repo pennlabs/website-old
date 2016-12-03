@@ -8,128 +8,22 @@ layout: default
     <h2>Alumni</h2>
   </div>
   <div class="underline_divider"></div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/alexey.jpg">
+
+  {% for alum in site.data.alum-bios %}
+    <div class="item">
+      <div class="image img-responsive">
+        <img src="{{ alum.image }}">
+      </div>
+      <h3>{{ alum.firstname }} {{ alum.lastname }}</h3>
+      {% unless alum.work == nil %}
+        <p class="work">Now at <span class="now-at">{{ alum.work }}</span></p>
+      {% endunless %}
+      <p class="labs-time">{{ alum.startyear }}
+        {% unless alum.endyear == nil %}
+          &ndash; {{ alum.endyear }}
+        {% endunless %}
+      </p>
     </div>
-    <h3>Alexey Komissarouk</h3>
-    <p class="work">Now at <span class="now-at">Hacker Paradise</span></p>
-    <p class="labs-time">2010 &ndash; 2011</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/kyle.jpg">
-    </div>
-    <h3>Kyle Hardgrave</h3>
-    <p class="work">Now at <span class="now-at">Medium</span></p>
-    <p class="labs-time">Spring 2012 &ndash; Spring 2014</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/amalia.jpg">
-    </div>
-    <h3>Amalia Hawkins</h3>
-    <p class="work">Now at <span class="now-at">Pippio</span></p>
-    <p class="labs-time">2010 &ndash; 2011</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/kevin.jpg">
-    </div>
-    <h3>Kevin Su</h3>
-    <p class="work">Now at <span class="now-at">Google</span></p>
-    <p class="labs-time">2011 &ndash; 2012</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/dan.jpg">
-    </div>
-    <h3>Dan Getelman</h3>
-    <p class="work">Now at <span class="now-at">Remix</span></p>
-    <p class="labs-time">2010 &ndash; 2011</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/nop.jpg">
-    </div>
-    <h3>Nop Jiarathanakul</h3>
-    <p class="work">Now at <span class="now-at">Autodesk</span></p>
-    <p class="labs-time">2010 &ndash; 2013</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/david.jpg">
-    </div>
-    <h3>David Xu</h3>
-    <p class="work">Now at <span class="now-at">Upthere</span></p>
-    <p class="labs-time">2012 &ndash; 2013</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/ceasar.jpg">
-    </div>
-    <h3>Ceasar Bautista</h3>
-    <p class="labs-time">2010 &ndash; 2014</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/geoff.jpg">
-    </div>
-    <h3>Geoffrey Vedernikoff</h3>
-    <p class="work">Now at <span class="now-at">Raise</span></p>
-    <p class="labs-time">Fall 2011 &ndash; Spring 2014</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/clara.jpg">
-    </div>
-    <h3>Clara Wu</h3>
-    <p class="work">Now at <span class="now-at">Facebook</span></p>
-    <p class="labs-time">2012 &ndash; 2015</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/lewis.jpg">
-    </div>
-    <h3>Lewis Ellis</h3>
-    <p class="work">Now at <span class="now-at">Shape Security</span></p>
-    <p class="labs-time">2012 &ndash; 2014</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/james.jpg">
-    </div>
-    <h3>James Feuereisen</h3>
-    <p class="work">Now at <span class="now-at">Boston Consulting Group</span></p>
-    <p class="labs-time">Fall 2013 &ndash; Spring 2014</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/vivian.jpg">
-    </div>
-    <h3>Vivian Huang</h3>
-    <p class="work">Now at <span class="now-at">Airbnb</span></p>
-    <p class="labs-time">Spring 2014</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/prakhar.jpg">
-    </div>
-    <h3>Prakhar Bhandari</h3>
-    <p class="labs-time">Fall 2015 &ndash; Spring 2016</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/reika.jpg">
-    </div>
-    <h3>Reika Yoshino</h3>
-    <p class="labs-time">Fall 2015 &ndash; Spring 2016</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="/img/alumni/lakata.jpg">
-    </div>
-    <h3>David Lakata</h3>
-    <p class="labs-time">Spring 2015 &ndash; Spring 2016</p>
-  </div>
-</div>   
+  {% endfor %}
+
+</div>

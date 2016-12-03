@@ -8,64 +8,20 @@ layout: default
     <h2>Projects</h2>
   </div>
   <div class="underline_divider"></div>
-  <div class="item">
-    <div class="image">
-      <img class="img-responsive" src="img/screenshots/pcr.png">
+
+  {% for project in site.data.projects %}
+    {% capture link %}<a href='{{ project.website }}' target='_blank'>{{ project.linknickname }}</a>{% endcapture %}
+
+    <div class="item">
+      <div class="image">
+        <img class="img-responsive" src="{{ project.image }}">
+      </div>
+      <h3><a href="{{ project.link }}">{{ project.projectname }}</a></h3>
+      <p>
+          {{ project.description | replace_first: project.linknickname, link | remove: '<p>' | remove: '</p>' }}
+      </p>
     </div>
-    <h3><a href="http://penncoursereview.com">Penn Course Review</a></h3>
-    <p>We built the <a href="http://penncoursereview.com">Penn Course Review</a> to allow Penn students to make informed decisions on their course decisions. PCR includes professor rankings, course difficulties, commentary, and more on all courses taught at Penn in the past decade. </p>
-  </div>
-  <div class="item">
-    <div class="image">
-      <img class="img-responsive" src="img/screenshots/events.png">
-    </div>
-    <h3><a href="http://eventsatpenn.com">Events@Penn</a></h3>
-    <p>Creating a centralized tool to discover all events happening on Penn’s campus, <a href="http://eventsatpenn.com">Events@Penn</a> is a serve curated by the Daily Pennsylvanian that lists upcoming student events and the ability for students to search for events that may be of interest to them.
-    </p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img class="img-responsive" src="img/screenshots/bookbazaar.png">
-    </div>
-    <h3><a href="http://pennbookbazaar.com/">Penn Book Bazaar</a></h3>
-    <p>We built <a href="http://pennbookbazaar.com/">Penn Book Bazaar</a> to solve one of the most basic problems confronting students: textbooks. Book Bazaar allows students to search for the textbooks they need as well as sell the ones they are done with. Need to sell a book? Check it out here. Need to sell something else? Stay tuned :)</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img class="img-responsive" src="img/screenshots/mobile.png">
-    </div>
-    <h3><a href="http://pennlabs.org/mobile/">Penn Mobile App</a></h3>
-    <p><a href="http://pennlabs.org/mobile/">PennMobile</a> is the university's first official mobile app. On iOS and Android, PennMobile provides live dining hall menus and hours, course and faculty search, live bus routes, popular sources of campus-news and school support numbers.</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img class="img-responsive" src="img/screenshots/cfa.png">
-    </div>
-    <h3><a href="https://penncfa.com">Common Funding Application </a></h3>
-    <p><a href="https://penncfa.com">CFA</a> is a tool allow student groups across the University to easily request funding for their events to one or more funding sources on campus. Simultaneously, funding groups have the ability to view what groups have applied for funding from them and make approval/denials. </p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img class="img-responsive" src="img/screenshots/madeatpenn.png">
-    </div>
-    <h3><a href="http://madeatpenn.pennlabs.org">Made At Penn</a></h3>
-    <p><a href="http://madeatpenn.pennlabs.org">Made At Penn</a> is a showcase for startups and projects created by Penn students and alumni. Projects can be submitted for review, but only the best make it onto the homepage. </p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img class="img-responsive" src="img/screenshots/pcrapi.png">
-    </div>
-    <h3><a href="/docs/pcr.html">Penn Course Review API</a></h3>
-    <p><a href="/docs/pcr.html">The Penn Course Review API</a> was the first API we released for developers at Penn. Over the course of the last few years, the API has allowed students to create awesome apps with information including reviews for courses, instructors and departments. <a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&formkey=dGZOZkJDaVkxdmc5QURUejAteFdBZGc6MQ#gid=0">Request access to our API today!</a>
-    </p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img class="img-responsive" src="img/screenshots/registrar.png">
-    </div>
-    <h3><a href="https://github.com/pennlabs/penn-sdk-python">Penn Registrar API</a></h3>
-    <p>While Penn already had an API for its registrar, Labs worked with the administration to open up the API for developer use. With an easy to use python wrapper, the API allows developers to access up-to-date registrar information, including course schedules, registration status and locations.</p><a href="https://secure.www.upenn.edu/computing/da/webloginportal/eforms/index.html?content=kew/EDocLite?edlName=registrarApiAccessForm&userAction=initiate">Request access to the API here.</a>
-  </div>
+  {% endfor %}
 </div>
 
 <div class="info_block" id="about">
@@ -79,56 +35,32 @@ layout: default
     <h2>Team</h2>
   </div>
   <div class="underline_divider"></div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="img/bios/adam.jpg">
-    </div>
-    <h3>Adam Domingoes</h3>
-    <p><a href="http://www.adamdomingoes.com">Adam</a> is a sophomore studying Finance and Computer Science and is Co-Director of Penn Labs. When he’s not hacking in JavaScript, he can be found playing guitar.</p>
-  </div>
+
+  {% for member in site.data.bios %}
+    {% capture linkedName %}<a href='{{ member.website }}' target='_blank'>{{ member.firstname }}</a>{% endcapture %}
     <div class="item">
-    <div class="image img-responsive">
-      <img src="img/bios/jason.jpg">
+      <div class="image img-responsive">
+        <img src="{{ member.image }}">
+      </div>
+      <h3>{{ member.firstname }} {{ member.lastname }}</h3>
+      <p>
+        {% unless member.website == nil %}
+          {{ member.bio | replace_first: member.firstname, linkedName | remove: '<p>' | remove: '</p>' }}
+        {% else %}
+          {{ member.bio | remove: '<p>' | remove: '</p>' }}
+        {% endunless %}
+      </p>
     </div>
-    <h3>Jason Tang</h3>
-      <p><a href="https://jasontsh.github.io">Jason</a> is a junior in Computer Science and Economics from Hong Kong and is Co-Director of Penn Labs.  He is proficient in android coding, and when he is not coding he plays piano and composes.</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="img/bios/adel.jpg">
-    </div>
-    <h3>Adel Qalieh</h3>
-    <p>Adel is a senior from Detroit studying computational biology. When he's not hacking in Python, Adel enjoys learning new languages, trying spicy food, and studying organic chemistry.</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="img/bios/joseph.jpg">
-    </div>
-    <h3>Joseph Gao</h3>
-    <p>Joseph is a junior studying computer science. He enjoys working on cool projects and spends his free time either hanging out with his suite mates or on the rift.</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="img/bios/sumit.jpg">
-    </div>
-        <h3>Sumit Shyamsukha</h3>
-    <p>Sumit is a sophomore from India studying Computer Science and Cognitive Science. When he's not trying to learn new things off the Internet, you can find him singing or musing about anything and everything.</p>
-  </div>
-  <div class="item">
-    <div class="image img-responsive">
-      <img src="img/bios/krishna.jpg">
-    </div>
-    <h3>Krishna Bharathala</h3>
-    <p>Krishna is a junior in the Management and Technology program where he is studying Computer Science, Management, and Statistics. He likes going to hackathons, learning magic tricks, and playing chess.</p>
-  </div>
-</div>   
+  {% endfor %}
+</div>
 
 <div class="info_block" id="schedule">
   <h2>Made@Penn</h2>
   <div class="underline_divider"></div>
-  <p>Made@Penn is a Labs project to showcase the work of student developers. Our goal is to strengthen the community of builders at Penn. If you'd like to demo your work, submit <a class="text_link" href="http://madeatpenn.pennlabs.org">here</a>.</p>       </div>
+  <p>Made@Penn is a Labs project to showcase the work of student developers. Our goal is to strengthen the community of builders at Penn. If you'd like to demo your work, submit <a class="text_link" href="http://madeatpenn.pennlabs.org">here</a>.</p>
+</div>
 
-<div id="contact">
+<div class="" id="contact">
   <h2>Contact</h2>
   <div class="underline_divider"></div>
   <div class="row">
@@ -142,16 +74,16 @@ layout: default
           <input type="email" name="email" class="form-control" placeholder="Email">
         </div>
         <div class="form-group">
-          <input type="text" name="_subject" class="form-control" placeholder="Subject">
+          <input type="text" name="subject" class="form-control" placeholder="Subject">
         </div>
         <div class="form-group">
-          <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+          <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
         </div>
         <input type="text" name="_gotcha" style="display:none" />
         <input type="submit" class="btn btn-default" value="Submit">
       </form>
-    </div> 
-    
+    </div>
+
     <div class="help-form col-md-4 col-sm-4">
       <h3 id="help">Need help?</h3>
       <ul id="help_list">
@@ -161,5 +93,4 @@ layout: default
       </ul>
     </div>
   </div>
-</div>
 </div>
