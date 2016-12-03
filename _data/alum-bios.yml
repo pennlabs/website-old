@@ -1,0 +1,111 @@
+- firstname: Alexey
+  lastname: Komissarouk
+  image: /img/alumni/alexey.jpg
+  work: Hacker Paradise
+  startyear: 2010
+  endyear: 2011
+
+- firstname: Kyle
+  lastname: Hardgrave
+  image: /img/alumni/kyle.jpg
+  work: Medium
+  startyear: Spring 2012
+  endyear: Spring 2014
+
+- firstname: Amalia
+  lastname: Hawkins
+  image: /img/alumni/amalia.jpg
+  work: Pippio
+  startyear: 2010
+  endyear: 2011
+
+- firstname: Kevin
+  lastname: Su
+  image: /img/alumni/kevin.jpg
+  work: Google
+  startyear: 2011
+  endyear: 2012
+
+- firstname: Dan
+  lastname: Getelman
+  image: /img/alumni/dan.jpg
+  work: Remix
+  startyear: 2010
+  endyear: 2011
+
+- firstname: Nop
+  lastname: Jiarathanakul
+  image: /img/alumni/nop.jpg
+  work: Autodesk
+  startyear: 2010
+  endyear: 2013
+
+- firstname: David
+  lastname: Xu
+  image: /img/alumni/david.jpg
+  work: Upthere
+  startyear: 2012
+  endyear: 2013
+
+- firstname: Ceasar
+  lastname: Bautista
+  image: /img/alumni/ceasar.jpg
+  work:
+  startyear: 2010
+  endyear: 2014
+
+- firstname: Geoffrey
+  lastname: Vedernikoff
+  image: /img/alumni/geoff.jpg
+  work: Raise
+  startyear: Fall 2011
+  endyear: Spring 2014
+
+- firstname: Clara
+  lastname: Wu
+  image: /img/alumni/clara.jpg
+  work: Facebook
+  startyear: 2012
+  endyear: 2015
+
+- firstname: Lewis
+  lastname: Ellis
+  image: /img/alumni/lewis.jpg
+  work: Shape Security
+  startyear: 2012
+  endyear: 2014
+
+- firstname: James
+  lastname: Feuereisen
+  image: /img/alumni/james.jpg
+  work: Boston Consulting Group
+  startyear: Fall 2013
+  endyear: Spring 2014
+
+- firstname: Vivian
+  lastname: Huang
+  image: /img/alumni/vivian.jpg
+  work: Airbnb
+  startyear: Spring 2014
+  endyear:
+
+- firstname: Prakhar
+  lastname: Bhandari
+  image: /img/alumni/prakhar.jpg
+  work:
+  startyear: Fall 2015
+  endyear: Spring 2016
+
+- firstname: Reika
+  lastname: Yoshino
+  image: /img/alumni/reika.jpg
+  work:
+  startyear: Fall 2015
+  endyear: Spring 2016
+
+- firstname: David
+  lastname: Lakata
+  image: /img/alumni/lakata.jpg
+  work:
+  startyear: Spring 2015
+  endyear: Spring 2016
