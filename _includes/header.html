@@ -9,8 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="Penn Labs">
     <title>Penn Labs</title>
-    <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="/css/style.css" rel="stylesheet">
@@ -40,15 +41,16 @@
         <div class="col-md-6 pull-left" id="title-before">
           <div id="title">
             <h1>Penn Labs</h1>
-            <img src="/img/labs2.png"/>
+            <img src="/img/labs.png"/>
           </div>
         </div>
       </div>
       <!-- Fixed navbar -->
       <div class="navbar navbar-default">
-        <div class="container">
+        <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -56,12 +58,12 @@
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li {% if page.url == '/index.html' %}class="active"{% endif %}><a href="/#banner">Home</a></li>
+              <li {% if page.url == '/index.html' || page.url == '/' %} class="active" {% endif %}><a href="/#banner">Home</a></li>
               <li><a href="/#projects">Projects</a></li>
               <li><a href="/#about">About</a></li>
               <li><a href="/#team">Team</a></li>
-              <li {% if current[1] == 'alumni' %}class="active"{% endif %}><a href="/alumni">Alumni</a></li>
-              <li><a href="http://blog.pennlabs.org/">Blog</a></li>
+              <li {% if current[1] == 'alumni' %} class="active" {% endif %}><a href="/alumni">Alumni</a></li>
+              <li><a href="http://blog.pennlabs.org/" target="_blank">Blog</a></li>
               <li><a href="/#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
