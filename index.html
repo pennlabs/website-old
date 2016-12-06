@@ -8,22 +8,67 @@ layout: default
     <h2>Projects</h2>
   </div>
   <div class="underline_divider"></div>
-
-  {% for project in site.data.projects %}
-    {% capture link %}<a href='{{ project.website }}' target='_blank'>{{ project.linknickname }}</a>{% endcapture %}
-
-    <div class="item">
-      <div class="image">
-        <img class="img-responsive" src="{{ project.image }}">
-      </div>
-      <h3><a href="{{ project.link }}">{{ project.projectname }}</a></h3>
-      <p>
-          {{ project.description | replace_first: project.linknickname, link | remove: '<p>' | remove: '</p>' }}
-      </p>
+  <div class="item">
+    <div class="image">
+      <img class="img-responsive" src="img/screenshots/pcr.png">
     </div>
-  {% endfor %}
+    <h3><a href="http://penncoursereview.com">Penn Course Review</a></h3>
+    <p>We built the <a href="http://penncoursereview.com">Penn Course Review</a> to allow Penn students to make informed decisions on their course decisions. PCR includes professor rankings, course difficulties, commentary, and more on all courses taught at Penn in the past decade. </p>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img class="img-responsive" src="img/screenshots/events.png">
+    </div>
+    <h3><a href="http://eventsatpenn.com">Events@Penn</a></h3>
+    <p>Creating a centralized tool to discover all events happening on Penn’s campus, <a href="http://eventsatpenn.com">Events@Penn</a> is a serve curated by the Daily Pennsylvanian that lists upcoming student events and the ability for students to search for events that may be of interest to them.
+    </p>
+  </div>
+  <div class="item">
+    <div class="image img-responsive">
+      <img class="img-responsive" src="img/screenshots/bookbazaar.png">
+    </div>
+    <h3><a href="http://pennbookbazaar.com/">Penn Book Bazaar</a></h3>
+    <p>We built <a href="http://pennbookbazaar.com/">Penn Book Bazaar</a> to solve one of the most basic problems confronting students: textbooks. Book Bazaar allows students to search for the textbooks they need as well as sell the ones they are done with. Need to sell a book? Check it out here. Need to sell something else? Stay tuned :)</p>
+  </div>
+  <div class="item">
+    <div class="image img-responsive">
+      <img class="img-responsive" src="img/screenshots/mobile.png">
+    </div>
+    <h3><a href="http://pennlabs.org/mobile/">Penn Mobile App</a></h3>
+    <p><a href="http://pennlabs.org/mobile/">PennMobile</a> is the university's first official mobile app. On iOS and Android, PennMobile provides live dining hall menus and hours, course and faculty search, live bus routes, popular sources of campus-news and school support numbers.</p>
+  </div>
+  <div class="item">
+    <div class="image img-responsive">
+      <img class="img-responsive" src="img/screenshots/cfa.png">
+    </div>
+    <h3><a href="https://penncfa.com">Common Funding Application </a></h3>
+    <p><a href="https://penncfa.com">CFA</a> is a tool allow student groups across the University to easily request funding for their events to one or more funding sources on campus. Simultaneously, funding groups have the ability to view what groups have applied for funding from them and make approval/denials. </p>
+  </div>
+  <div class="item">
+    <div class="image img-responsive">
+      <img class="img-responsive" src="img/screenshots/madeatpenn.png">
+    </div>
+    <h3><a href="http://madeatpenn.pennlabs.org">Made At Penn</a></h3>
+    <p><a href="http://madeatpenn.pennlabs.org">Made At Penn</a> is a showcase for startups and projects created by Penn students and alumni. Projects can be submitted for review, but only the best make it onto the homepage. </p>
+  </div>
+  <div class="item">
+    <div class="image img-responsive">
+      <img class="img-responsive" src="img/screenshots/pcrapi.png">
+    </div>
+    <h3><a href="/docs/pcr.html">Penn Course Review API</a></h3>
+    <p><a href="/docs/pcr.html">The Penn Course Review API</a> was the first API we released for developers at Penn. Over the course of the last few years, the API has allowed students to create awesome apps with information including reviews for courses, instructors and departments. <a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&formkey=dGZOZkJDaVkxdmc5QURUejAteFdBZGc6MQ#gid=0">Request access to our API today!</a>
+    </p>
+  </div>
+  <div class="item">
+    <div class="image img-responsive">
+      <img class="img-responsive" src="img/screenshots/registrar.png">
+    </div>
+    <h3><a href="https://github.com/pennlabs/penn-sdk-python">Penn Registrar API</a></h3>
+    <p>While Penn already had an API for its registrar, Labs worked with the administration to open up the API for developer use. With an easy to use python wrapper, the API allows developers to access up-to-date registrar information, including course schedules, registration status and locations.
+      <a href="https://secure.www.upenn.edu/computing/da/webloginportal/eforms/index.html?content=kew/EDocLite?edlName=registrarApiAccessForm&userAction=initiate">Request access to the api here.</a>
+    </p>
+  </div>
 </div>
-
 <div class="info_block" id="about">
   <h2>About Labs</h2>
   <div class="underline_divider"></div>
@@ -52,7 +97,7 @@ layout: default
       </p>
     </div>
   {% endfor %}
-</div>
+
 
 <div class="info_block" id="schedule">
   <h2>Made@Penn</h2>
@@ -93,4 +138,5 @@ layout: default
       </ul>
     </div>
   </div>
+</div>
 </div>
