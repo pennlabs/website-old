@@ -14,16 +14,16 @@
   image: img/bios/adel.jpg
   bio: "Adel is a senior from Detroit studying computational biology. When he's not hacking in Python, Adel enjoys learning new languages, trying spicy food, and studying organic chemistry."
 
-- firstname: Joseph
-  lastname: Gao
-  image: img/bios/joseph.jpg
-  bio: Joseph is a junior studying computer science. He enjoys working on cool projects and spends his free time either hanging out with his suite mates or on the rift.
-
 - firstname: Jason
   lastname: Tang
   website: https://jasontsh.github.io/
   image: img/bios/jason.jpg
   bio: Jason is a junior in Computer Science and Economics from Hong Kong. He is proficient in android coding, and when he is not coding he plays piano and composes.
+
+- firstname: Joseph
+  lastname: Gao
+  image: img/bios/joseph.jpg
+  bio: Joseph is a junior studying computer science. He enjoys working on cool projects and spends his free time either hanging out with his suite mates or on the rift.
 
 - firstname: Young
   lastname: Lee
