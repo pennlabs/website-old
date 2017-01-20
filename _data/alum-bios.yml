@@ -68,6 +68,13 @@
   startyear: 2012
   endyear: 2015
 
+- firstname: Dhruv
+  lastname: Maheshwari
+  image: /img/alumni/dhruv.jpg
+  work: LinkedIn
+  startyear: 2013
+  endyear: 2015
+
 - firstname: Lewis
   lastname: Ellis
   image: /img/alumni/lewis.jpg
@@ -87,25 +94,25 @@
   image: /img/alumni/vivian.jpg
   work: Airbnb
   startyear: Spring 2014
-  endyear:
+  endyear: 2015
 
-- firstname: Prakhar
-  lastname: Bhandari
-  image: /img/alumni/prakhar.jpg
+- firstname: Alex
+  lastname: Wissmann
+  image: /img/alumni/alex.jpg
+  work: Twitter
+  startyear: 2013
+  endyear: 2016
+
+- firstname: Hong
+  lastname: Kim
+  image: /img/alumni/hong.jpg
   work:
-  startyear: Fall 2015
-  endyear: Spring 2016
+  startyear: 2014
+  endyear: 2016
 
 - firstname: Reika
   lastname: Yoshino
   image: /img/alumni/reika.jpg
   work:
   startyear: Fall 2015
-  endyear: Spring 2016
-
-- firstname: David
-  lastname: Lakata
-  image: /img/alumni/lakata.jpg
-  work:
-  startyear: Spring 2015
   endyear: Spring 2016

@@ -4,28 +4,53 @@
   image: img/bios/adam.jpg
   bio: Adam is a sophomore studying Finance and Computer Science and is Co-Director of Penn Labs. When he’s not hacking in JavaScript, he can be found playing guitar.
 
-- firstname: Jason
-  lastname: Tang
-  website: https://jasontsh.github.io/
-  image: img/bios/jason.jpg
-  bio: Jason is a junior in Computer Science and Economics from Hong Kong and is Co-Director of Penn Labs. He is proficient in android coding, and when he is not coding he plays piano and composes.
+- firstname: Tiffany
+  lastname: Chang
+  image: img/bios/tiffany.jpg
+  bio: Tiffany, from Honolulu, is a sophomore in Business Analytics and Finance minoring in computer science. She is currently Labs’ Co-Director and primary UX/UI designer. In her free time, she enjoys playing volleyball and reading about design theory and psychology.
 
 - firstname: Adel
   lastname: Qalieh
   image: img/bios/adel.jpg
-  bio: Adel is a senior from Detroit studying computational biology. When he's not hacking in Python, Adel enjoys learning new languages, trying spicy food, and studying organic chemistry.
+  bio: "Adel is a senior from Detroit studying computational biology. When he's not hacking in Python, Adel enjoys learning new languages, trying spicy food, and studying organic chemistry."
 
 - firstname: Joseph
   lastname: Gao
   image: img/bios/joseph.jpg
   bio: Joseph is a junior studying computer science. He enjoys working on cool projects and spends his free time either hanging out with his suite mates or on the rift.
 
-- firstname: Sumit
-  lastname: Shyamsukha
-  image: img/bios/sumit.jpg
-  bio: Sumit is a sophomore from India studying Computer Science and Cognitive Science. When he's not trying to learn new things off the Internet, you can find him singing or musing about anything and everything.
+- firstname: Jason
+  lastname: Tang
+  website: https://jasontsh.github.io/
+  image: img/bios/jason.jpg
+  bio: Jason is a junior in Computer Science and Economics from Hong Kong. He is proficient in android coding, and when he is not coding he plays piano and composes.
 
-- firstname: Krishna
-  lastname: Bharathala
-  image: img/bios/krishna.jpg
-  bio: Krishna is a junior in the Management and Technology program where he is studying Computer Science, Management, and Statistics. He likes going to hackathons, learning magic tricks, and playing chess.
+- firstname: Young
+  lastname: Lee
+  image: img/bios/young.jpg
+  bio: Young Lee, from Vancouver, Canada, is currently a freshman in M&amp;T planning to major in computer science and concentrate in Management. When he is not coding in Javascript or OCaml, he enjoys filmmaking, photography, listening to jazz and hip-hop, and finding the best sushi in town.
+
+- firstname: Victor
+  lastname: Chien
+  image: img/bios/victor.jpg
+  bio: Victor Chien is from Sunnyvale, California, and currently a freshman in M&amp;T planning to major in computer science and concentrate in Management.  When not programming in Swift, Java, HTML/CSS, Javascript, and Python, he enjoys hunting for free food and exploring new cities.
+
+- firstname: Suzanne
+  lastname: Knop
+  image: img/bios/suzanne.jpg
+  bio: "Suzanne Knop, from Poughkeepsie, NY, is currently studying Digital Media Design. She focuses on front-end web design and when she's not developing, she likes to make music videos and go to the roofs of buildings."
+
+- firstname: Brandon
+  lastname: Lin
+  image: img/bios/brandon.jpg
+  bio: "Brandon Lin is a freshman planning to study Chemical and Biomolecular Engineering from New York City, NY. He likes coding in Python and typesetting in LaTeX, and can usually be found singing to modern music, 80’s pop, or Broadway musicals or with a Rubik's Cube."
+
+- firstname: Andrew
+  lastname: Si
+  image: img/bios/andrewsi.jpg
+  bio: Andrew Si, from Los Altos, California, is a freshman in computer science. He primarily programs in Java but has tested the waters of JS, Matlab, C++, and OCaml. During his freetime, he enjoys playing piano, tennis, basketball, and video games.
+
+- firstname: Aaron
+  lastname: Michaels
+  image: img/bios/aaron.jpg
+  bio: Aaron Michels is a junior in Cognitive Science from Bangkok, Thailand.  When not programming in JavaScript, he enjoys reading, and long distance running and cycling.
