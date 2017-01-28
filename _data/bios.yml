@@ -53,4 +53,9 @@
 - firstname: Aaron
   lastname: Michaels
   image: img/bios/aaron.jpg
-  bio: Aaron Michels is a junior in Cognitive Science from Bangkok, Thailand.  When not programming in JavaScript, he enjoys reading, and long distance running and cycling.
+  bio: Aaron Michaels is a junior in Cognitive Science from Bangkok, Thailand.  When not programming in JavaScript, he enjoys reading, and long distance running and cycling.
+
+- firstname: Julia
+  lastname: Chun
+  image: img/bios/julia.jpg
+  bio: Julia Chun, from South Korea, is a sophomore studying computer science. Her current interests are data processing and big data analytics. In her free time, she likes to play the violin, dance, work out at the gym, or read about cool new businesses.
