@@ -1,0 +1,55 @@
+- projectname: Penn Course Review
+  imagesource: img/screenshots/pcr.png
+  description: We built the _NAME_ to allow Penn students to make informed decisions on their course decisions. PCR includes professor rankings, course difficulties, commentary, and more on all courses taught at Penn in the past decade. 
+  link: http://penncoursereview.com
+  requestlink:
+  
+- projectname: Events@Penn
+  imagesource: img/screenshots/events.png
+  description: _NAME_ is a centralized tool to discover all events happening on Penn’s campus that lists upcoming student events and the ability for students to search for events that may be of interest to them.
+  link: 
+  requestlink:
+  
+- projectname: Penn Book Bazaar
+  imagesource: img/screenshots/bookbazaar.png
+  description: "We built _NAME_ to solve one of the most basic problems confronting students: textbooks. Book Bazaar allows students to search for the textbooks they need as well as sell the ones they are done with. Need to sell a book? Check it out here. Need to sell something else? Stay tuned :)"
+  link: http://pennbookbazaar.com/
+  requestlink:
+
+- projectname: Penn Mobile App
+  imagesource: img/screenshots/mobile.png
+  description: _NAME_ is the university's first official mobile app. On iOS and Android, PennMobile provides live dining hall menus and hours, course and faculty search, live bus routes, popular sources of campus-news and school support numbers.
+  link: http://pennlabs.org/mobile/
+  requestlink:
+  
+- projectname: Common Funding Application
+  imagesource: img/screenshots/cfa.png
+  description: _NAME_ is a tool allow student groups across the University to easily request funding for their events to one or more funding sources on campus. Simultaneously, funding groups have the ability to view what groups have applied for funding from them and make approval/denials.
+  link: https://penncfa.com
+  requestlink:
+
+- projectname: Made At Penn
+  imagesource: img/screenshots/madeatpenn.png
+  description: _NAME_ is a showcase for startups and projects created by Penn students and alumni. Projects can be submitted for review, but only the best make it onto the homepage. 
+  link: http://madeatpenn.pennlabs.org
+  requestlink:
+
+- projectname: Pennvolvement
+  imagesource: img/screenshots/pennvolvement.png
+  description: _NAME_ is a platform for companies and organizations to post volunteer opportunities for Penn students.
+  link: https://pennvolvement.com/
+  requestlink:
+  
+- projectname: Penn Course Review API
+  imagesource: img/screenshots/pcrapi.png
+  description: _NAME_ was the first API we released for developers at Penn. Over the course of the last few years, the API has allowed students to create awesome apps with information including reviews for courses, instructors and departments. _REQUESTLINK_
+  link: /docs/pcr.html
+  requestlink: https://docs.google.com/spreadsheet/viewform?hl=en_US&formkey=dGZOZkJDaVkxdmc5QURUejAteFdBZGc6MQ#gid=0
+  
+- projectname: Penn Registrar API
+  imagesource: img/screenshots/registrar.png
+  description: While Penn already had an API for its registrar, Labs worked with the administration to open up the API for developer use. With an easy to use python wrapper, the API allows developers to access up-to-date registrar information, including course schedules, registration status and locations.
+     _REQUESTLINK_
+  link: https://github.com/pennlabs/penn-sdk-python
+  requestlink: https://secure.www.upenn.edu/computing/da/webloginportal/eforms/index.html?content=kew/EDocLite?edlName=registrarApiAccessForm&userAction=initiate
+
