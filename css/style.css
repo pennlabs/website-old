@@ -339,6 +339,10 @@ form ul, ol{
   padding-left: 0px;
 }
 
+iframe {
+  overflow: hidden;
+}
+
 /***************
  * Alumni page *
  **************/

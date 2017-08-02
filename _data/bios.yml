@@ -9,11 +9,6 @@
   image: img/bios/tiffany.jpg
   bio: Tiffany, from Honolulu, is a sophomore in Business Analytics and Finance minoring in computer science. She is currently Labs’ Co-Director and primary UX/UI designer. In her free time, she enjoys playing volleyball and reading about design theory and psychology.
 
-- firstname: Adel
-  lastname: Qalieh
-  image: img/bios/adel.jpg
-  bio: "Adel is a senior from Detroit studying computational biology. When he's not hacking in Python, Adel enjoys learning new languages, trying spicy food, and studying organic chemistry."
-
 - firstname: Jason
   lastname: Tang
   website: https://jasontsh.github.io/
