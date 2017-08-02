@@ -10,7 +10,7 @@ layout: default
   <div class="underline_divider"></div>
 
   {% for project in site.data.projects %}
-    
+
     {% capture linkedName %}<a href="{{ project.link }}">{{ project.projectname }}</a>{% endcapture %}
     {% capture request %}<a href='{{ project.requestlink }}'>Request access to our API here.</a>{% endcapture %}
     {% capture filteredText %} {{ project.description | replace: "_REQUESTLINK_", request }} {% endcapture %}
@@ -23,10 +23,10 @@ layout: default
         {% unless project.link == nil %}
           {{ linkedName }}
         {% else %}
-         {{ project.projectname }} 
+         {{ project.projectname }}
         {% endunless %}
       </h3>
-      <p> 
+      <p>
         {% unless project.link == nil %}
           {{ filteredText | replace: "_NAME_", linkedName }}
         {% else %}
@@ -79,7 +79,7 @@ layout: default
   <div class="underline_divider"></div>
   <div class="row">
     <div class="embed-responsive embed-responsive-16by9 col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2 text-center">
-	    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrT34Qj2pBfDcBeEDje9r76pNOPI5h4YxBQHIjvZ-Hx_ka_Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> 
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrT34Qj2pBfDcBeEDje9r76pNOPI5h4YxBQHIjvZ-Hx_ka_Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
     </div>
   </div>
 </div>
