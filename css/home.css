@@ -63,7 +63,7 @@ a {
   margin: 5px;
 }
 a:hover {
-  /*background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);*/
+  color: #F3277F;
   transition: ease-in 0.2s;
 }
 h1 {
