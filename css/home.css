@@ -101,7 +101,18 @@ i:hover {
 }
 
 button {
+  background-color: #e22b4c;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 25px;
+}
 
+button:hover {
+  background-color: #F3277F;
+  box-shadow: 0px 1px 5px 3px rgba(163, 27, 75, .47);
+  transition: ease-in 0.2s;
+  color: white;
 }
 
 a.button {
