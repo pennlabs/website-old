@@ -9,7 +9,7 @@
 }
 
 .navibar {
-  position: absolute;
+  position: fixed;
   top: 0;
   margin: 40px;
   display: flex;
@@ -106,6 +106,10 @@ button {
   font-family: 'Raleway', sans-serif;
   color: white;
   font-size: 25px;
+}
+
+.blue {
+  color: #F3277F !important;
 }
 
 button:hover {
