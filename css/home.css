@@ -28,6 +28,9 @@
   border-radius: 3px;
   padding: 10px;
   margin: 0px 0px 20px 0px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .smallbtn:hover {
   color: white;
@@ -61,6 +64,10 @@ html {
 body {
   background-color: #F9FBFD;
 }
+
+a.level-item {
+  color: #F3277F;
+}
 a {
   color: white;
   font-family: 'Raleway', sans-serif;
@@ -77,6 +84,7 @@ h1 {
   font-size: 30px;
   color: #4A4A4A;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 i {
@@ -152,6 +160,6 @@ body {
 }
 
 .container.is-fluid {
-  margin-left: 100px !important;
-  margin-right: 100px !important;
+  margin-left: 80px !important;
+  margin-right: 80px !important;
 }
