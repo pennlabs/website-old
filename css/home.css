@@ -188,3 +188,9 @@ body {
 img.card-img {
   border-radius: 3px 3px 0px 0px;
 }
+
+.logo {
+  height: 200px;
+  width: 400px;
+  margin-bottom: 100px;
+}
