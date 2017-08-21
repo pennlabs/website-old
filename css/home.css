@@ -1,0 +1,196 @@
+.hero {
+  height: 950px;
+  width: 100%;
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  z-index: 5;
+  background-color: #F9FBFD;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, .05);
+}
+
+.navbar-container a{
+  color: #66a6ff;
+}
+
+ .spacer {
+   width: 100%;
+   height: 30px;
+ }
+
+.navibar {
+  /*position: fixed;*/
+  top: 0;
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 5;
+}
+.smallbtn {
+  font-size: 20px !important;
+  background-color: #F3277F;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 0px 0px 20px 0px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.smallbtn:hover {
+  color: white;
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  box-shadow: 0px 1px 5px 3px rgba(163, 27, 75, .47);
+}
+.projcard {
+  background-color: #F9FBFD;
+  box-shadow: 0px 1px 5px 2px rgba(0,0,0,.1);
+  padding: 20px;
+  border-radius: 0px 0px 3px 3px;
+}
+
+.team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projects {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  padding: 40px;
+  z-index: 1;
+  padding-bottom: 100px;
+}
+
+html {
+  background-color: #F9FBFD;
+}
+body {
+  background-color: #F9FBFD;
+}
+
+a.level-item {
+  color: #F3277F;
+}
+a {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  margin: 5px;
+}
+a:hover {
+  color: #F3277F;
+  transition: ease-in 0.2s;
+}
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #4A4A4A;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+i {
+  color: #1488CC;
+  z-index: 2;
+  font-size: 20px;
+}
+
+i:hover {
+  color: #F3277F;
+  transition: ease-in 0.2s;
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  padding: 20px;
+}
+
+.card {
+  margin: 20px;
+}
+
+.round {
+  width: 300px;
+  height: 50px;
+  border-radius: 100px;
+}
+
+button {
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+.blue {
+  color: #F3277F !important;
+}
+
+button:hover {
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  box-shadow: 0px 1px 5px 3px rgba(163, 27, 75, .47);
+  transition: ease-in 0.2s;
+  color: white;
+}
+
+a.button {
+  background-color: #e22b4c;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 25px;
+}
+
+.thecards {
+  margin: 20px;
+}
+a.button:hover {
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  box-shadow: 0px 1px 5px 3px rgba(163, 27, 75, .47);
+  transition: ease-in 0.2s;
+  color: white;
+}
+
+.icon {
+  color: #e22b4c !important;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container.is-fluid {
+  margin-left: 80px !important;
+  margin-right: 80px !important;
+}
+
+.button-icon {
+  color: white;
+  margin-right: 10px;
+}
+
+img.card-img {
+  border-radius: 3px 3px 0px 0px;
+}
+
+.logo {
+  height: 200px;
+  width: 400px;
+  margin-bottom: 100px;
+}
