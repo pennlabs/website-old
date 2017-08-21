@@ -179,3 +179,8 @@ body {
   margin-left: 80px !important;
   margin-right: 80px !important;
 }
+
+.button-icon {
+  color: white;
+  margin-right: 10px;
+}
