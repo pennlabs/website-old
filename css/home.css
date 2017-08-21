@@ -184,3 +184,7 @@ body {
   color: white;
   margin-right: 10px;
 }
+
+img.card-img {
+  border-radius: 3px 3px 0px 0px;
+}
