@@ -5,6 +5,7 @@ This is the static website hosted at [pennlabs.org](http://pennlabs.org).
 ## Authors
 * Clara Wu
 * Adel Qalieh
+* Tiffany Chang (2017)
 
 ## Contributing
 
@@ -21,6 +22,9 @@ We love to accept pull requests! Also, file bugs or ask questions in GitHub issu
 ### Deploying
 
 The website is currently hosted on GitHub pages, so deploying a change as is simple as merging a change into the `gh-pages` branch.
+
+### Edits
+The most recent edit was made in fall 2017. The website no longer uses Jekyll and is built with HTML/CSS.
 
 ## License
 
